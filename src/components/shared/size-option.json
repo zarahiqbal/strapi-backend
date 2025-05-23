@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_size_options",
+  "info": {
+    "displayName": "size_options",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "string"
+    },
+    "in_stock": {
+      "type": "boolean"
+    }
+  }
+}
