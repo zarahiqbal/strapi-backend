@@ -38,17 +38,17 @@
     "available": {
       "type": "boolean"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "product"
-    },
     "size": {
       "displayName": "Size option",
       "type": "component",
       "repeatable": true,
       "component": "shared.size-option"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "products"
     }
   }
 }
