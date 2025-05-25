@@ -38,10 +38,11 @@
     "available": {
       "type": "boolean"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "product"
     },
     "size": {
       "displayName": "Size option",
